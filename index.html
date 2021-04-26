@@ -1,0 +1,24 @@
+<div id="login-area" style="width: 500px; margin: auto;">
+    <h1>Intelegent</h1>
+    <h1>Hiring that mixes</h1>
+    <p>Technology</p>
+    <p>& psychology</p>
+    <button id="first-div">schedule a demo today</button>
+</div>
+
+<div id="transaction-area" style="display: none; width: 500px; margin: auto">
+    <h2>Fill up</h2>
+    <p><input type="text" placeholder="Enter your Name"></p>
+    <p><input type="phone" placeholder="Enter your Phone number"></p>
+    <p><input type="email" placeholder="Enter your Email Address"></p>
+    <button type="submit">submit</button>
+</div>
+<script>
+   // button login button handler
+    const loginArea = document.getElementById("first-div").addEventListener("click", function () {
+    const loginArea = document.getElementById("login-area");
+    loginArea.style.display="none";
+    transactionArea = document.getElementById("transaction-area");
+    transactionArea.style.display="block";
+})
+</script>
